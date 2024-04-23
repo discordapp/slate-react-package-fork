@@ -131,7 +131,7 @@ const Element = (props: {
     NODE_TO_PARENT.set(text, element)
   }
 
-  return renderElement({ attributes, children, element })
+  return renderElement({ attributes, children, element, decorations })
 }
 
 const MemoizedElement = React.memo(Element, (prev, next) => {
