@@ -84,6 +84,7 @@ const Children = (props: Parameters<typeof useChildren>[0]) => (
 export interface RenderElementProps {
   children: any
   element: Element
+  decorations: Range[],
   attributes: {
     'data-slate-node': 'element'
     'data-slate-inline'?: true
